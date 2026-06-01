@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시물정렬웹앱</title>
+    <style>
+        #post-list {
+            list-style: none;
+            padding-left: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>게시물 정렬</h1>
+
+    <label for="sort-select">정렬하기</label>
+    <select id="sort-select">
+        <option value="createdAt">최신순</option>
+        <option value="views">조회수</option>
+        <option value="likes">좋아요수</option>
+        <option value="title">가나다abc순</option>
+    </select>
+
+    <ul id="post-list"></ul>
+
+    <script src="post.js"></script>
+</body>
+</html>
